@@ -30,9 +30,8 @@ class Presto < Padrino::Application
   #   end
   #
   
-    error 404 do
-      render "themes/#{Nesta::Config.theme}/404", :layout => "themes/#{Nesta::Config.theme}/application".to_sym
-    end
-  
+  error 404 do
+    render "themes/#{Nesta::Config.theme}/404", :layout => "themes/#{Nesta::Config.theme}/application".to_sym
+  end
 
 end
